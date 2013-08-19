@@ -1,0 +1,280 @@
+html,body {
+	margin: 0 auto;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	height: 100%;
+}
+
+button {
+	cursor: pointer;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+a {
+	color: #BBBBBB;
+	text-decoration: none;
+
+}
+
+.pageWrap {
+	min-height: 100%;
+	margin-bottom: -32px;
+}
+
+.pageWrap:after {
+	display: block;
+	content: "";
+}
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul#nav {
+	width: 100%;
+	display: block;
+	background-color: #2D2D2D;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0 9px;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+
+}
+
+/*
+div #plus {
+line-height: 10px;	padding: 0 0px 2px 3px;
+	display: inline;
+	height: 10px;
+	position: absolute;
+	top: 60px;
+}
+*/
+
+ul#nav li a {
+	display: inline-block;
+	padding: 7px 9px;
+	float: left;
+}
+
+
+ul#nav li  .selected  {
+	color: #fff;
+}
+
+ul#nav li a:hover  {
+	color: #fff;
+	text-decoration: none;
+}
+
+#searchArea {
+	
+	margin: 40px auto;
+	text-align: center;
+	height: 200px;
+	padding: 100px 0;
+}
+
+div .logo {
+	display: block;
+	background-image: url("../images/logo4w.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 276px;
+	height: 100px;
+	padding: 0px;
+	margin-bottom: 20px;
+}
+
+.searchInput {
+	border-radius: 2px;
+	border-width: 1px solid D9D9D9;
+	width: 564px;
+	margin: 0 auto 5px;
+	height: 24px;
+	background-image: url("../images/microphone.png");
+
+}
+
+
+ input[type=text]  {
+	width: 564px;
+	font-size: 16px;
+	height: 24px;
+	display: block;
+	margin: 0 auto;
+	background-image: url("../images/microphone.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+INPUT:hover {
+	border: 1px solid #A0A0A0;
+	box-shadow: inset 0 0 4px #ccc;
+	height: 28px;
+	background-image: url("../images/microphone_hover.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+		width: 564px;
+
+}
+
+INPUT:focus {
+	border: 1px solid #4D90FE;
+	box-shadow: inset 0 0 4px #ccc;
+	text-indent: 10px;
+	width: 564px;
+}
+	
+button.search {
+	font-size: 11px;
+	font-weight: bold;
+	color: #444444;
+	padding: 7px 9px;
+	border: 1px solid #D9D9D9;
+	background-color: #F2F2F2;
+	border-radius: 2px;
+	margin: 16px 6px;
+	font-family: "Helvetica Neue" Arial, sans-serif;
+	background: #f5f5f5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f5f5f5 0%, #f1f1f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f5f5f5 0%,#f1f1f1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+}
+
+button.search:hover {
+	border: 1px solid #C6C6C6;
+	background: #f5f5f5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f5f5f5 0%, #f1f1f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f5f5f5 0%,#f1f1f1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+	-o-transition:border .2s ease-out, background 2s ease-in;
+  -ms-transition:border .2s ease-out, background 2s ease-in;
+  -moz-transition:border .2s ease-out, background 2s ease-in;
+  -webkit-transition:border .2s ease-out, background 2s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:border .2s ease-out, background 2s ease-in;
+	-webkit-box-shadow:  0px 1px 1px 1px rgba(190, 190, 190, .1);
+    box-shadow:  0px 1px 1px 1px rgba(190, 190, 190, .1);
+
+}
+
+#signIn {
+	padding: 15px 20px;
+
+}
+.login {
+	font-size: 11px;
+	float: right;
+	text-transform: uppercase;
+	border: 1px solid #DD4B39;
+	color: #fff;
+	border-radius: 2px;
+	font-weight: 500;
+	padding: 7px 16px;
+	background: #dd4b39; /* Old browsers */
+background: -moz-linear-gradient(top,  #dd4b39 0%, #d14836 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dd4b39), color-stop(100%,#d14836)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #dd4b39 0%,#d14836 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #dd4b39 0%,#d14836 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #dd4b39 0%,#d14836 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #dd4b39 0%,#d14836 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4b39', endColorstr='#d14836',GradientType=0 ); /* IE6-9 */
+
+}
+
+button.login:hover {
+	border: 1px solid #B0281A;
+	background: #dd4b39; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dd4b39 0%, #c53727 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dd4b39), color-stop(100%,#c53727)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dd4b39 0%,#c53727 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dd4b39 0%,#c53727 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dd4b39 0%,#c53727 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dd4b39 0%,#c53727 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4b39', endColorstr='#c53727',GradientType=0 ); /* IE6-9 */
+	-o-transition:border .2s ease-out, background 2s ease-in;
+  -ms-transition:border .2s ease-out, background 2s ease-in;
+  -moz-transition:border .2s ease-out, background 2s ease-in;
+  -webkit-transition:border .2s ease-out, background 2s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:border .2s ease-out, background 2s ease-in;
+
+}
+
+#footer {
+	width: 100%;
+	color: #666666;
+	border-top: 1px solid #EBEBEB;
+	height: 32px;	
+}
+
+ #footer ul#footerNav {
+	list-style-type: none;
+	float: right;
+	color: #666666;
+	margin-right: 10px;
+	min-width: 400px;
+	white-space: nowrap;
+}
+
+#footer ul li  {
+	font-size: 13px;
+	color: #666666;
+	padding: 0px 9px;
+	float: left;
+	display: inline-block;
+	margin-top: -11px;
+
+}
+
+ul#footerNav li a {
+	color: #666666;
+}
+
+ul a:hover {
+	font-size: 13px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 3px solid #BBBBBB;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  content: "";
+  margin: 0 6px 1px 4px;
+}
+
+li span  a:hover .caret {
+	border-top: 3px solid #fff;
+	border-right: 3px solid transparent;
+	border-left: 3px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
