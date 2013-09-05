@@ -1,12 +1,12 @@
 html,body {
 	margin: 0 auto;
-	font-family:  Arial, sans-serif;
 	height: 100%;
+	font-family:  Arial, sans-serif;
 }
 
 button {
-	cursor: pointer;
 	font-family: "Helvetica Neue", Arial, sans-serif;
+	cursor: pointer;
 }
 
 
@@ -31,33 +31,22 @@ a:hover {
 }
 
 ul#nav {
-	width: 100%;
 	display: block;
-	background-color: #2D2D2D;
-	font-size: 13px;
-	font-weight: bold;
-	padding: 0px;
-	list-style-type: none;
 	display: inline-block;
 	margin: 0;
+	padding: 0px;
+	width: 100%;
+	background-color: #2D2D2D;
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 13px;
 	
-
 }
-
-/*
-div #plus {
-line-height: 10px;	padding: 0 0px 2px 3px;
-	display: inline;
-	height: 10px;
-	position: absolute;
-	top: 60px;
-}
-*/
 
 ul#nav li a {
 	display: inline-block;
-	padding: 7px 9px;
 	float: left;
+	padding: 7px 9px;
 }
 
 
@@ -73,71 +62,66 @@ ul#nav li a:hover  {
 #searchArea {
 	
 	margin: 40px auto;
-	text-align: center;
-	height: 200px;
 	padding: 100px 0;
+	height: 200px;
+	text-align: center;
 }
 
 div .logo {
 	display: block;
+	margin-bottom: 20px;
+	padding: 0px;
+	height: 100px;
 	background-image: url("../images/logo4w.png");
-	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 276px;
-	height: 100px;
-	padding: 0px;
-	margin-bottom: 20px;
+	background-repeat: no-repeat;
 }
 
 .searchInput {
-	border-radius: 2px;
-	border-width: 1px solid D9D9D9;
-	width: 564px;
 	margin: 0 auto 5px;
+	width: 564px;
 	height: 24px;
+	border-width: 1px solid D9D9D9;
+	border-radius: 2px;
 	background-image: url("../images/microphone.png");
 
 }
 
  input[type=text]  {
-	width: 564px;
-	font-size: 16px;
-	height: 24px;
 	display: block;
 	margin: 0 auto;
+	width: 564px;
+	height: 24px;
 	background-image: url("../images/microphone.png");
-	background-repeat: no-repeat;
 	background-position: right center;
+	background-repeat: no-repeat;
+	font-size: 16px;
 }
 
 INPUT:hover {
-	border: 1px solid #A0A0A0;
-	box-shadow: inset 0 0 4px #ccc;
-	height: 28px;
-	background-image: url("../images/microphone_hover.png");
-	background-repeat: no-repeat;
-	background-position: right center;
 	width: 564px;
+	height: 28px;
+	border: 1px solid #A0A0A0;
+	background-image: url("../images/microphone_hover.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 4px #ccc;
 
 }
 
 INPUT:focus {
+	width: 564px;
 	border: 1px solid #4D90FE;
 	box-shadow: inset 0 0 4px #ccc;
 	text-indent: 10px;
-	width: 564px;
 }
 	
 button.search {
-	font-size: 11px;
-	font-weight: bold;
-	color: #444444;
+	margin: 16px 6px;
 	padding: 7px 9px;
 	border: 1px solid #D9D9D9;
-	background-color: #F2F2F2;
 	border-radius: 2px;
-	margin: 16px 6px;
-	font-family: "Helvetica Neue" Arial, sans-serif;
 	background: #f5f5f5; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f5f5f5 0%, #f1f1f1 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
@@ -145,6 +129,11 @@ button.search {
 	background: -o-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #f5f5f5 0%,#f1f1f1 100%); /* W3C */
+	background-color: #F2F2F2;
+	color: #444444;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: "Helvetica Neue" Arial, sans-serif;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
 }
 
@@ -157,15 +146,15 @@ button.search:hover {
 	background: -o-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #f5f5f5 0%,#f1f1f1 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #f5f5f5 0%,#f1f1f1 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
-	-o-transition:border .2s ease-out, background 2s ease-in;
-  -ms-transition:border .2s ease-out, background 2s ease-in;
-  -moz-transition:border .2s ease-out, background 2s ease-in;
-  -webkit-transition:border .2s ease-out, background 2s ease-in;
-  /* ...and now override with proper CSS property */
-  transition:border .2s ease-out, background 2s ease-in;
 	-webkit-box-shadow:  0px 1px 1px 1px rgba(190, 190, 190, .1);
     box-shadow:  0px 1px 1px 1px rgba(190, 190, 190, .1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+  -webkit-transition:border .2s ease-out, background 2s ease-in;
+  -moz-transition:border .2s ease-out, background 2s ease-in;
+  -ms-transition:border .2s ease-out, background 2s ease-in;
+	-o-transition:border .2s ease-out, background 2s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:border .2s ease-out, background 2s ease-in;
 }
 
 #signIn {
@@ -173,14 +162,10 @@ button.search:hover {
 }
 
 .login {
-	font-size: 11px;
 	float: right;
-	text-transform: uppercase;
-	border: 1px solid #DD4B39;
-	color: #fff;
-	border-radius: 2px;
-	font-weight: 500;
 	padding: 7px 16px;
+	border: 1px solid #DD4B39;
+	border-radius: 2px;
 	background: #dd4b39; /* Old browsers */
 background: -moz-linear-gradient(top,  #dd4b39 0%, #d14836 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dd4b39), color-stop(100%,#d14836)); /* Chrome,Safari4+ */
@@ -188,6 +173,10 @@ background: -webkit-linear-gradient(top,  #dd4b39 0%,#d14836 100%); /* Chrome10+
 background: -o-linear-gradient(top,  #dd4b39 0%,#d14836 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top,  #dd4b39 0%,#d14836 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #dd4b39 0%,#d14836 100%); /* W3C */
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 11px;
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4b39', endColorstr='#d14836',GradientType=0 ); /* IE6-9 */
 }
 
@@ -201,40 +190,40 @@ button.login:hover {
 	background: -ms-linear-gradient(top,  #dd4b39 0%,#c53727 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #dd4b39 0%,#c53727 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4b39', endColorstr='#c53727',GradientType=0 ); /* IE6-9 */
-	-o-transition:border .2s ease-out, background 2s ease-in;
-  -ms-transition:border .2s ease-out, background 2s ease-in;
-  -moz-transition:border .2s ease-out, background 2s ease-in;
   -webkit-transition:border .2s ease-out, background 2s ease-in;
+  -moz-transition:border .2s ease-out, background 2s ease-in;
+  -ms-transition:border .2s ease-out, background 2s ease-in;
+	-o-transition:border .2s ease-out, background 2s ease-in;
   /* ...and now override with proper CSS property */
   transition:border .2s ease-out, background 2s ease-in;
 
 }
 
 #footer {
-	width: 100%;
-	color: #666666;
-	border-top: 1px solid #EBEBEB;
-	height: 32px;
 	position: absolute;
 	bottom: 0px;
+	width: 100%;
+	height: 32px;
+	border-top: 1px solid #EBEBEB;
+	color: #666666;
 }
 
  #footer ul#footerNav {
-	list-style-type: none;
 	float: right;
-	color: #666666;
 	margin-right: 10px;
 	min-width: 400px;
+	color: #666666;
+	list-style-type: none;
 	white-space: nowrap;
 }
 
 #footer ul li  {
-	font-size: 13px;
-	color: #666666;
-	padding: 0px 9px;
-	float: left;
 	display: inline-block;
+	float: left;
 	margin-top: -11px;
+	padding: 0px 9px;
+	color: #666666;
+	font-size: 13px;
 
 }
 
@@ -243,21 +232,21 @@ ul#footerNav li a {
 }
 
 ul a:hover {
-	font-size: 13px;
 	color: #666666;
 	text-decoration: underline;
+	font-size: 13px;
 }
 
 .caret {
   display: inline-block;
+  margin: 0 6px 1px 4px;
   width: 0;
   height: 0;
-  vertical-align: middle;
   border-top: 3px solid #BBBBBB;
   border-right: 3px solid transparent;
   border-left: 3px solid transparent;
   content: "";
-  margin: 0 6px 1px 4px;
+  vertical-align: middle;
 }
 
 li span  a:hover .caret {
