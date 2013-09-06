@@ -1,3 +1,4 @@
+/*  -----   global styles  -----   */
 html,body {
 	margin: 0 auto;
 	height: 100%;
@@ -17,6 +18,7 @@ a {
 
 }
 
+/*  -----   page styles  -----   */
 .pageWrap {
 	margin-bottom: -32px;
 }
@@ -30,6 +32,7 @@ a:hover {
 	text-decoration: none;
 }
 
+/*  -----   navigation  -----   */
 ul#nav {
 	display: block;
 	display: inline-block;
@@ -59,12 +62,14 @@ ul#nav li a:hover  {
 	text-decoration: none;
 }
 
+
 #searchArea {
 	
 	margin: 40px auto;
 	padding: 100px 0;
 	height: 200px;
 	text-align: center;
+	
 }
 
 div .logo {
@@ -78,31 +83,35 @@ div .logo {
 	background-repeat: no-repeat;
 }
 
+/*  -----   search input styles  -----   */
+
 .searchInput {
 	margin: 0 auto 5px;
 	width: 564px;
-	height: 24px;
-	border-width: 1px solid D9D9D9;
+	height: 28px;
+	border-width: 1px solid #a0a0a0;
 	border-radius: 2px;
 	background-image: url("../images/microphone.png");
+/* 	border: 1px dotted pink;  */
 
 }
 
  input[type=text]  {
 	display: block;
 	margin: 0 auto;
-	width: 564px;
-	height: 24px;
+	width: 554px;
+	height: 20px;
 	background-image: url("../images/microphone.png");
 	background-position: right center;
 	background-repeat: no-repeat;
 	font-size: 16px;
+	padding: 2px;
 }
 
 INPUT:hover {
-	width: 564px;
-	height: 28px;
-	border: 1px solid #A0A0A0;
+	width: 554px;
+	height: 20px;
+/* 	border: 1px solid #A0A0A0;  */
 	background-image: url("../images/microphone_hover.png");
 	background-position: right center;
 	background-repeat: no-repeat;
@@ -111,12 +120,13 @@ INPUT:hover {
 }
 
 INPUT:focus {
-	width: 564px;
-	border: 1px solid #4D90FE;
+	width: 554px;
+/* 	border: 1px solid #4D90FE; */
 	box-shadow: inset 0 0 4px #ccc;
 	text-indent: 10px;
 }
 	
+/*  -----   button styles  -----   */	
 button.search {
 	margin: 16px 6px;
 	padding: 7px 9px;
